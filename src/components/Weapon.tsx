@@ -21,7 +21,7 @@ const Weapon = () => {
     return (
         <LayoutMain>
             <section className="w-[90%] grow py-5 text-white flex flex-col gap-4">
-                {loading && <div className="w-full h-full font-mono text-3xl w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center"> Loading...</div> ||
+                {loading && <div className="w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center text-white"> Loading...</div> ||
                     <>
                         <h2 className=" text-6xl font-mono">{weapon?.displayName}</h2>
                         <div className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 items-center justify-center">

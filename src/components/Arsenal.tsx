@@ -19,7 +19,7 @@ const Arsenal = () => {
     return (
         <LayoutMain>
             <section className='text-white w-[90%] flex flex-col '>
-                {loading && <div className="w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center">Loading...</div> ||
+                {loading && <div className="w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center text-white">Loading...</div> ||
                     <>
                         <h2 className='text-white text-6xl font-mono '>Choose your Weapon</h2>
                         <ul className='w-full grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4 py-10'>

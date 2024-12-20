@@ -23,7 +23,7 @@ const Agents = () => {
     return (
         <LayoutMain>
             <section className='w-[90%] grow flex flex-col '>
-                {loading && <div className= "w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center"> Loading...</div> ||
+                {loading && <div className= "w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center text-white"> Loading...</div> ||
                     <>
                         <h2 className="text-white text-6xl font-mono self-start ">Agents</h2>
                         <ul className='grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4 py-10'>

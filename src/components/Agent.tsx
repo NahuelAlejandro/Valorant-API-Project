@@ -25,7 +25,7 @@ const AgentCharacter = () => {
     <LayoutMain>
       <section className="bg-zinc-950 min-h-screen text-white flex flex-col items-center pb-10">
         {
-          loading && <div className="w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center"> Loading...</div> ||
+          loading && <div className="w-full min-h-[35vh] font-mono text-3xl flex justify-center items-center text-white"> Loading...</div> ||
           <>
             <article className="bg-black grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-5 items-center w-full overflow-hidden relative font-mono">
               <img className="col-span-2" src={agent.background} alt={`${agent.displayName} name image`} />
