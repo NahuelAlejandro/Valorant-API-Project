@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom"
 import { getAgent } from "../services/services"
 import { Agent } from "../models/agentModel"
 import LayoutMain from "../views/LayoutMain"
+import { useSEO } from "../hooks/useSEO"
 
 const AgentCharacter = () => {
   const params = useParams()
   const [agent, setAgent] = useState<Agent>({} as Agent)
-  
+  useSEO({title: `${agent.displayName}`})
   const [ selectedAbility, setSelectedAbility]= useState<string>("")
   useEffect(() => {
     const { id } = params

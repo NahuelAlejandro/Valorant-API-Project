@@ -4,8 +4,9 @@ import agentsImg from "../assets/images/agent-img.webp"
 import { Link } from "react-router-dom"
 import GameModes from "./GameModes"
 import arsenalImage from "../assets/images/arsenal.png"
+import { useSEO } from "../hooks/useSEO"
 const Home = () => {
-
+useSEO({title: "Home"})
   return (
     <LayoutMain>
       <Hero />
