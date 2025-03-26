@@ -37,27 +37,27 @@ const Weapon = () => {
                                 <tbody className="text-lg bg-stone-600">
                                     <tr>
                                         <th>Cost</th>
-                                        <td>{weapon.shopData?.cost}</td>
+                                        <td>{weapon.shopData?.cost || "Null"}</td>
                                     </tr>
                                     <tr>
                                         <th>Fire Rate</th>
-                                        <td>{weapon.weaponStats?.fireRate}</td>
+                                        <td>{weapon.weaponStats?.fireRate || "Null"}</td>
                                     </tr>
                                     <tr>
                                         <th>Run Speed Multiplier</th>
-                                        <td>{weapon.weaponStats?.runSpeedMultiplier}</td>
+                                        <td>{weapon.weaponStats?.runSpeedMultiplier || "Null"}</td>
                                     </tr>
                                     <tr>
                                         <th>equip Time Seconds</th>
-                                        <td>{weapon.weaponStats?.equipTimeSeconds}</td>
+                                        <td>{weapon.weaponStats?.equipTimeSeconds || "Null"}</td>
                                     </tr>
                                     <tr>
                                         <th>Reload Time Seconds</th>
-                                        <td>{weapon.weaponStats?.reloadTimeSeconds}</td>
+                                        <td>{weapon.weaponStats?.reloadTimeSeconds || "Null"}</td>
                                     </tr>
                                     <tr>
                                         <th>first Bullet Accuracy</th>
-                                        <td>{weapon.weaponStats?.firstBulletAccuracy}</td>
+                                        <td>{weapon.weaponStats?.firstBulletAccuracy || "Null"}</td>
                                     </tr>
                                 </tbody>
                             </table>
