@@ -13,7 +13,7 @@ const Footer = () => {
     ]
     const ratingsText = ["Blood", "Language", "Violence", "Users Interact", "In-Game Purchases"]
     return (
-        <footer className="w-full flex flex-col items-center gap-5">
+        <footer className="w-full flex flex-col items-center gap-5 pb-14 md:pb-0">
             <div className="flex flex-col gap-3 md:flex-row justify-center items-center md:gap-5 text-white bg-stone-700 w-full min-h-20 py-2">
                 <Link className="text-lg py-1 px-3 hover:bg-stone-500 rounded-lg" to={"https://playvalorant.com/en-us/platform-selection/"}>Download Game Client</Link>
                 <Link className="text-lg py-1 px-3 hover:bg-stone-500 rounded-lg" to={"https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=singular_click_id%3D4106a1fc-a79a-4ea0-9289-6684d9dc3257"}>Download Riot Mobile Companion App</Link>
@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="flex flex-col items-center w-[90%] py-10 gap-8">
                 <ul className="list-none flex gap-4">
                     {socialLinks.map(link => (
-                        <li className="w-12 p-2 bg-stone-700 hover:bg-stone-500 rounded-lg content-center " key={link.title}>
+                        <li className="w-12 p-2 bg-stone-700 hover:bg-stone-500 rounded-lg content-center cursor-pointer" key={link.title}>
                             <Link className="h-full lg:text-lg" to={link.path} title={link.title}>{link.icon}</Link>
                         </li>
                     ))}
@@ -29,7 +29,7 @@ const Footer = () => {
                 <Link to={"https://playvalorant.com/en-us/"}>
                     <RiotIcon style="fill-stone-700 hover:fill-white h-10 cursor-pointer lg:h-12" />
                 </Link>
-                <p className="text-stone-700 lg:text-xl">© 2020-2024 Riot Games, Inc. RIOT GAMES, VALORANT y todos los logotipos relacionados son marcas y nombres comerciales, marcas de servicio o marcas registradas de Riot Games, Inc.</p>
+                <p className="text-stone-700 lg:text-xl">© 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc.</p>
                 <article className="flex p-2 gap-4 bg-stone-700 rounded-lg">
                     <img src={rating} alt="" />
                     <ul>
